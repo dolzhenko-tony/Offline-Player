@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		34250DCF1D5FB6F00045CDF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34250DCE1D5FB6F00045CDF0 /* AppDelegate.swift */; };
-		34250DD11D5FB6F00045CDF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34250DD01D5FB6F00045CDF0 /* ViewController.swift */; };
 		34250DD31D5FB6F00045CDF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34250DD21D5FB6F00045CDF0 /* Assets.xcassets */; };
 		34250DD61D5FB6F00045CDF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34250DD41D5FB6F00045CDF0 /* Main.storyboard */; };
 		34250DE11D5FB6F00045CDF0 /* Offline_PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34250DE01D5FB6F00045CDF0 /* Offline_PlayerTests.swift */; };
 		34250DEC1D5FB6F00045CDF0 /* Offline_PlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34250DEB1D5FB6F00045CDF0 /* Offline_PlayerUITests.swift */; };
+		34250DFB1D5FB7C60045CDF0 /* PrimaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34250DFA1D5FB7C60045CDF0 /* PrimaryViewController.swift */; };
+		3452DFE31D61031A006D3CE0 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3452DFE21D61031A006D3CE0 /* AppsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,6 @@
 /* Begin PBXFileReference section */
 		34250DCB1D5FB6F00045CDF0 /* Offline Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Offline Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34250DCE1D5FB6F00045CDF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		34250DD01D5FB6F00045CDF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34250DD21D5FB6F00045CDF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34250DD51D5FB6F00045CDF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34250DD71D5FB6F00045CDF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +45,8 @@
 		34250DE71D5FB6F00045CDF0 /* Offline PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Offline PlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34250DEB1D5FB6F00045CDF0 /* Offline_PlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offline_PlayerUITests.swift; sourceTree = "<group>"; };
 		34250DED1D5FB6F00045CDF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34250DFA1D5FB7C60045CDF0 /* PrimaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrimaryViewController.swift; path = ViewControllers/PrimaryViewController.swift; sourceTree = "<group>"; };
+		3452DFE21D61031A006D3CE0 /* AppsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppsViewController.swift; path = ViewControllers/AppsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +97,8 @@
 		34250DCD1D5FB6F00045CDF0 /* Offline Player */ = {
 			isa = PBXGroup;
 			children = (
+				34250DF91D5FB7A30045CDF0 /* ViewControllers */,
 				34250DCE1D5FB6F00045CDF0 /* AppDelegate.swift */,
-				34250DD01D5FB6F00045CDF0 /* ViewController.swift */,
 				34250DD21D5FB6F00045CDF0 /* Assets.xcassets */,
 				34250DD41D5FB6F00045CDF0 /* Main.storyboard */,
 				34250DD71D5FB6F00045CDF0 /* Info.plist */,
@@ -120,6 +122,15 @@
 				34250DED1D5FB6F00045CDF0 /* Info.plist */,
 			);
 			path = "Offline PlayerUITests";
+			sourceTree = "<group>";
+		};
+		34250DF91D5FB7A30045CDF0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				34250DFA1D5FB7C60045CDF0 /* PrimaryViewController.swift */,
+				3452DFE21D61031A006D3CE0 /* AppsViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,8 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34250DD11D5FB6F00045CDF0 /* ViewController.swift in Sources */,
+				34250DFB1D5FB7C60045CDF0 /* PrimaryViewController.swift in Sources */,
 				34250DCF1D5FB6F00045CDF0 /* AppDelegate.swift in Sources */,
+				3452DFE31D61031A006D3CE0 /* AppsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +487,7 @@
 				34250DF21D5FB6F00045CDF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34250DF31D5FB6F00045CDF0 /* Build configuration list for PBXNativeTarget "Offline PlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +496,7 @@
 				34250DF51D5FB6F00045CDF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34250DF61D5FB6F00045CDF0 /* Build configuration list for PBXNativeTarget "Offline PlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +505,7 @@
 				34250DF81D5FB6F00045CDF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
